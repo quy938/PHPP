@@ -1,0 +1,15 @@
+<?php
+$user = [
+    "name" => "John",
+    "age" => 30,
+    "skills" => ["PHP", "JavaScript", "SQL"]
+];
+
+foreach ($user as $key => $value) {
+    if (is_array($value)) {
+        echo "$key: " . implode(", ", $value) . "\n";
+    } else {
+        echo "$key: $value\n";
+    }
+}
+?>
